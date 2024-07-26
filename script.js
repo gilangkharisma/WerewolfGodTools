@@ -56,8 +56,27 @@ function generateInput() {
 function updatePemain(){
     const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     const yangDilik = Array.from(checkboxes).map(checkbox => checkbox.value);
+    const outputDiv = document.getElementById('outputUpdatePemain');
+
+    // Menghapus div yang ada di outputDiv
+    outputDiv.innerHTML = '';
+
     const nPemain = yangDilik.length;
     console.log(nPemain)
+
+    for (const value of yangDilik) {
+      
+      // Membuat div baru
+      const newDiv = document.createElement('div');
+      // Membuat elemen checkbox dan menambahkan ke div
+
+      // Menambahkan teks ke div baru
+      newDiv.textContent = `${value}`;
+  
+      // Menambahkan div baru ke outputDiv
+      outputDiv.appendChild(newDiv);
+      console.log(outputDiv.appendChild(newDiv)); 
+    }
 
     document.getElementById('mulai').addEventListener('click', () => {
         startTimer(nPemain);
@@ -85,5 +104,30 @@ function startTimer(nPemain) {
       }
     }, 1000);
 }
+
+//audio pagi malam
+const audioPagi = document.getElementById("audioPagi");
+const audioMalam = document.getElementById("audioMalam");
+const pagi = document.getElementById("pagi");
+const malam = document.getElementById("malam"); // Added malam button reference
+const pauseButton = document.getElementById("pause");
+
+// Event listeners for both buttons
+pagi.addEventListener("click", function() {
+  audioPagi.play();
+  audioMalam.pause(); // Pause malam audio if playing
+});
+
+malam.addEventListener("click", function() {
+  audioMalam.play();
+  audioPagi.pause(); // Pause pagi audio if playing
+});
+
+pauseButton.addEventListener("click", () => {
+  audioPagi.pause();
+  audioMalam.pause();
+});
+
+
 
 

@@ -4,43 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOD Smart Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icon pagi -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- icon game -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <h1>GOD Smart Tools</h1>
+    <header><h1>GOD Smart Tools</h1></header>
     <h2>Kehidupan Pemain</h2>
-        <input type="checkbox" value="Zikri"> Zikri
-        <input type="checkbox" value="Andi"> Andi
-        <input type="checkbox" value="Eja"> Eja
-        <input type="checkbox" value="Elong"> Elong
-        <input type="checkbox" value="Jian"> Jian
-        <input type="checkbox" value="Adit"> Adit
-        <input type="checkbox" value="Gilang"> Gilang
-        <input type="checkbox" value="Eca"> Eca
-            <br>
-        <button type="button" onclick="generateInput()">Buat Permainan</button>
+    <div class="inputan">
+        <input type="checkbox" id="Zikri" value="Zikri"> <label class="custom-checkbox" for="Zikri">Zikri</label> 
+        <input type="checkbox" id="Andi" value="Andi"><label class="custom-checkbox" for="Andi">Andi</label>
+        <input type="checkbox" id="Eja" value="Eja"><label class="custom-checkbox" for="Eja">Eja</label>  
+        <input type="checkbox" id="Elong" value="Elong"><label class="custom-checkbox" for="Elong">Elong</label>
+        <input type="checkbox" id="Jian" value="Jian"><label class="custom-checkbox" for="Jian">Jian</label>
+        <input type="checkbox" id="Adit" value="Adit"><label class="custom-checkbox" for="Adit">Adit</label>
+        <input type="checkbox" id="Gilang" value="Gilang"><label class="custom-checkbox" for="Gilang">Gilang</label>
+        <input type="checkbox" id="Eca" value="Eca"><label class="custom-checkbox" for="Eca">Eca</label>
+    </div>
+    <div class="gameButton">
+        <span class="material-symbols-outlined" onclick="generateInput()" style="font-size: 40px;">
+            stadia_controller
+            </span> 
+    </div>
+       
+    <!-- <button type="button" onclick="generateInput()">Buat Permainan</button> -->
         
-    <h2>Urutan dan Status Peran Pemain</h2>
+    <h2>Peran Pemain</h2>
     <div id="outputPemain"></div>
 
-    <h2>Pengumuman Malam</h2>
-    <button type="button" onclick="updatePemain()">Update Pemain</button>
-        <ul>
-            <li>Seer</li>
-            <li>Sorserer</li>
-            <li>Bodyguard</li>
-            <li>Werewolf</li>
-        </ul>
-    <h2>Timer Diskusi</h2>
-    <button id="mulai">Mulai Timer</button>
+    <h2>Pengumuman</h2>
+        <button type="button" onclick="updatePemain()" class="tombolUpdate"><span class="material-symbols-outlined">
+            update
+            </span> Update Pemain</button>
+            <ul>
+                <li>Seer</li>
+                <li>Sorserer</li>
+                <li>Bodyguard</li>
+                <li>Werewolf</li>
+            </ul>
+        <h3>Player Bertahan</h3>
+        <div id="outputUpdatePemain"></div>
+    <h2>Timer</h2>
+    <button id="mulai"><span class="material-symbols-outlined">
+        timer
+        </span> Mulai Timer</button>
     <div id="timer"></div>
     <audio id="myAudio">
-        <source src="audio-harp.mp3" type="audio/mpeg">
+        <source src="https://ia601702.us.archive.org/20/items/windows-xp-7-10-sound-effects-opus-48/Windows%2010%20-%20Alarm%2010.opus" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <h2>Sesi Vote</h2>
+    <!-- <h2>Soundtrack</h2> -->
+    
+    <div class="aturAudio">
+        <div>
+            <span id="pagi" class="material-symbols-outlined">
+                clear_day
+            </span>
+            <!-- <button type="button" id="pagi">Pagi</button> -->
+            <span id="malam" class="material-symbols-outlined">
+                bedtime
+                </span>
+                    <!-- <button type="button" id="pause">Pause</button> -->
+            <span id="pause" class="material-symbols-outlined">
+                pause
+            </span>
+        </div>
+    </div>
+    <audio id="audioPagi">
+      <source src="https://ia801907.us.archive.org/5/items/va-sound-bible-sound-effects-opus-48/SoundBible%20-%20Sunny%20day.opus" type="audio/ogg"> </audio>
+    
+    <audio id="audioMalam">
+      <source src="https://ia801907.us.archive.org/5/items/va-sound-bible-sound-effects-opus-48/SoundBible%20-%20Night%20sounds%20crickets.opus" type="audio/ogg"> </audio>
+    
+
+    
+    
     <!-- <h2>Rekapitulasi Kemenangan</h2> -->
-    <h2>Perubahan Peran</h2>
+    <h2>Catatan</h2>
+    <textarea name="" id="" cols="30" rows="10">
+
+    </textarea>
     <script src="script.js"></script>
 </body>
 </html>

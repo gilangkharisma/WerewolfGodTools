@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    box-sizing: border-box;
+}
+
+
+/* input[type="checkbox"]{
+    display: none;
+} */
+
+header {
+    background: blue;
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: whitesmoke;
+    background: none;
+}
+
+h2 {
+    background: rgb(187, 126, 245);
+    color: rgb(70, 62, 57);
+    margin: 10px 0;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+h3 {
+    background: rgb(243, 73, 73);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.inputan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputan > input[type="checkbox"] {
+    display: none;
+}
+
+.inputan > input[type="checkbox"]:checked {
+    background-color: blue;
+}
+  
+
+label {
+    display: grid;
+    margin: 2px;
+    height: 2rem;
+    width: 80px;
+    background: rgb(255, 144, 116);
+    border-radius: 10px;
+    color: rgb(6, 37, 63);
+    place-items: center;
+}
+
+label:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+/* custom checkbox */
+
+.custom-checkbox {
+    cursor: pointer;
+    background-color: #eee;
+}
+  
+  
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #4CAF50;
+}
+
+/* custom checkbox */
+
+/* icon pagi */
+.material-symbols-outlined {
+    background: none;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+} 
+
+.gameButton {
+    display: grid;
+    height: 3em;
+    width: 120px;
+    background: lightgreen;
+    place-items: center;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.gameButton:hover {
+    background: rgb(41, 240, 41);
+}
+
+#outputPemain > div{
+    background: white;
+    padding: 7px;
+    border-radius: 2px;
+}
+
+.aturAudio {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, 0);
+}
+
+.aturAudio > div {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.aturAudio > div > span {
+    margin: 2px;
+}
+.aturAudio > div > span:hover {
+    background: rgb(175, 171, 171);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.pengumuman {
+    background: white;
+    width: 70%;
+    height: 100px;
+}
+
+ul > li {
+    background: whitesmoke;
+    list-style-type: none;
+}
+
+ul {
+    background: none;
+    padding-left: 0px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: lightgreen;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(76, 235, 76);
+}
+
+#outputUpdatePemain > div {
+    background: aliceblue;
+    padding: 5px;
+    width: 150px;
+}
+
+textarea{
+    background: wheat;
+    width: 70%;
+    height: 140px;
+}
+
+div#timer {
+    background: white;
+    font-size: 2.5em;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}

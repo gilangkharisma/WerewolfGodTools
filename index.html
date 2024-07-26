@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOD Smart Tools</title>
+</head>
+<body>
+    <h1>GOD Smart Tools</h1>
+    <h2>Kehidupan Pemain</h2>
+        <input type="checkbox" value="Zikri"> Zikri
+        <input type="checkbox" value="Andi"> Andi
+        <input type="checkbox" value="Eja"> Eja
+        <input type="checkbox" value="Elong"> Elong
+        <input type="checkbox" value="Jian"> Jian
+        <input type="checkbox" value="Adit"> Adit
+        <input type="checkbox" value="Gilang"> Gilang
+        <input type="checkbox" value="Eca"> Eca
+            <br>
+        <button type="button" onclick="generateInput()">Buat Permainan</button>
+        
+    <h2>Urutan dan Status Peran Pemain</h2>
+    <div id="outputPemain"></div>
+
+    <h2>Pengumuman Malam</h2>
+    <button type="button" onclick="updatePemain()">Update Pemain</button>
+        <ul>
+            <li>Seer</li>
+            <li>Sorserer</li>
+            <li>Bodyguard</li>
+            <li>Werewolf</li>
+        </ul>
+    <h2>Timer Diskusi</h2>
+    <button id="mulai">Mulai Timer</button>
+    <div id="timer"></div>
+    <audio id="myAudio">
+        <source src="audio-harp.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Sesi Vote</h2>
+    <!-- <h2>Rekapitulasi Kemenangan</h2> -->
+    <h2>Perubahan Peran</h2>
+    <script src="script.js"></script>
+</body>
+</html>

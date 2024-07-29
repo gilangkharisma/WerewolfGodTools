@@ -12,16 +12,12 @@
 </head>
 <body>
     <header><h1>GOD Smart Tools</h1></header>
+    <h2>Pilih Lore</h2>
+    <div class="lore">
+    </div>
+
     <h2>Kehidupan Pemain</h2>
     <div class="inputan">
-        <input type="checkbox" id="Zikri" value="Zikri"> <label class="custom-checkbox" for="Zikri">Zikri</label> 
-        <input type="checkbox" id="Andi" value="Andi"><label class="custom-checkbox" for="Andi">Andi</label>
-        <input type="checkbox" id="Eja" value="Eja"><label class="custom-checkbox" for="Eja">Eja</label>  
-        <input type="checkbox" id="Elong" value="Elong"><label class="custom-checkbox" for="Elong">Elong</label>
-        <input type="checkbox" id="Jian" value="Jian"><label class="custom-checkbox" for="Jian">Jian</label>
-        <input type="checkbox" id="Adit" value="Adit"><label class="custom-checkbox" for="Adit">Adit</label>
-        <input type="checkbox" id="Gilang" value="Gilang"><label class="custom-checkbox" for="Gilang">Gilang</label>
-        <input type="checkbox" id="Eca" value="Eca"><label class="custom-checkbox" for="Eca">Eca</label>
     </div>
     <div class="gameButton">
         <span class="material-symbols-outlined" onclick="generateInput()" style="font-size: 40px;">
@@ -30,22 +26,26 @@
     </div>
        
     <!-- <button type="button" onclick="generateInput()">Buat Permainan</button> -->
-        
+    
+
+
     <h2>Peran Pemain</h2>
-    <div id="outputPemain"></div>
+    <div class="peranPemain">
+        <div id="outputPemain"></div><div id="outPemain"></div>
+    </div>
 
     <h2>Pengumuman</h2>
-        <button type="button" onclick="updatePemain()" class="tombolUpdate"><span class="material-symbols-outlined">
+        <!-- <button type="button" class="tombolUpdate" id="upPemain"><span class="material-symbols-outlined">
             update
-            </span> Update Pemain</button>
+            </span> Update Pemain</button> -->
             <ul>
-                <li>Seer</li>
-                <li>Sorserer</li>
-                <li>Bodyguard</li>
-                <li>Werewolf</li>
+                <li>Seer</li><input type="checkbox" class="cekheh">
+                <li>Sorcerer</li><input type="checkbox" class="cekheh">
+                <li>Bodyguard</li><input type="checkbox" class="cekheh">
+                <li>Werewolf</li><input type="checkbox" class="cekheh">
             </ul>
-        <h3>Player Bertahan</h3>
-        <div id="outputUpdatePemain"></div>
+        <!-- <h3>Player Bertahan</h3> -->
+        <!-- <div id="outputUpdatePemain"></div> -->
     <h2>Timer</h2>
     <button id="mulai"><span class="material-symbols-outlined">
         timer
@@ -85,7 +85,8 @@
     
     <!-- <h2>Rekapitulasi Kemenangan</h2> -->
     <h2>Catatan</h2>
-    <textarea name="" id="" cols="30" rows="10">
+    <a href="https://codepen.io/arismakey/full/QWXGJYW" target="_blank">Buku Panduan</a>
+    <textarea name="mauskkan catatanmu disini" id="" cols="30" rows="10" placeholder="masukkan catatanmu disini">
 
     </textarea>
     <script src="script.js"></script>

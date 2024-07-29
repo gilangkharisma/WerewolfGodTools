@@ -57,6 +57,10 @@ h3 {
     display: none;
 }
 
+input.masuk[type="checkbox"],input.masuk0[type="checkbox"] {
+    display: none;
+}
+
 .inputan > input[type="checkbox"]:checked {
     background-color: blue;
 }
@@ -79,14 +83,30 @@ label:hover {
 }
 /* custom checkbox */
 
-.custom-checkbox {
+.custom-checkbox,.custom-checkbox0 {
     cursor: pointer;
     background-color: #eee;
+}
+
+.custom-checkbox0 {
+    width: 100px;
+}
+
+.lore {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
   
   
 input[type="checkbox"]:checked + .custom-checkbox {
     background-color: #4CAF50;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox0 {
+    background-color: #7555eb;
 }
 
 /* custom checkbox */
@@ -119,17 +139,18 @@ input[type="checkbox"]:checked + .custom-checkbox {
     background: rgb(41, 240, 41);
 }
 
-#outputPemain > div{
+#outputPemain > div, .cekheh, ul > li{
     background: white;
     padding: 7px;
     border-radius: 2px;
 }
 
 .aturAudio {
-  position: absolute;
+  position: fixed;
   top: 50%;
-  right: 0;
+  right: 0px;
   transform: translate(-50%, 0);
+  background: none;
 }
 
 .aturAudio > div {
@@ -140,6 +161,9 @@ input[type="checkbox"]:checked + .custom-checkbox {
     justify-content: center;
     align-items: center;
     background: whitesmoke;
+    border-radius: 10px;
+    border: 3px solid rgb(30, 3, 105);
+    box-shadow: 0 0 5px 2px white;
 }
 
 .aturAudio > div > span {
@@ -165,6 +189,16 @@ ul > li {
 ul {
     background: none;
     padding-left: 0px;
+
+
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        
+        
 }
 
 button {
@@ -186,13 +220,15 @@ button:hover {
 #outputUpdatePemain > div {
     background: aliceblue;
     padding: 5px;
-    width: 150px;
+    width: 250px;
+    border-radius: 10px;
 }
 
 textarea{
-    background: wheat;
+    background: white;
     width: 70%;
     height: 140px;
+    border-radius: 10px;
 }
 
 div#timer {
@@ -201,4 +237,33 @@ div#timer {
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
+}
+
+.hm {
+    background: none;
+}
+
+.peranPemain {
+    display: flex;
+    flex-direction: row;
+}
+
+.cekheh {
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+a {
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #7555eb;
+    font-weight: bold;
+}
+
+a:hover {
+    background: lightgreen;
 }

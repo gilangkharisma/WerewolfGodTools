@@ -157,8 +157,24 @@ pauseButton.addEventListener("click", () => {
 
 
 
+
 // Daftar nama Kehidupan Pemain
 const nama = ["Andri", "Ovin", "Asnan", "Sani", "Zulfan","Zikri","Andi","Eja","Elong","Jian","Adit","Gilang","Eca","Holis"];
+
+//Penambahan nama
+const namaInput = document.getElementById("inputNama");
+const buttonNama = document.getElementById("buttonNama");
+buttonNama.addEventListener("click", () => {
+  const nilaiNama = namaInput.value;
+  nama.push(nilaiNama);
+
+  // Panggil fungsi createCheckbox untuk membuat checkbox baru
+  const newCheckbox = createCheckbox(nilaiNama);
+  container.appendChild(newCheckbox);
+
+  console.log(nilaiNama);
+});
+
 
 // Elemen div untuk menampung checkbox
 const container = document.querySelector('.inputan');
@@ -191,6 +207,19 @@ nama.forEach(nama => {
 
 // Daftar Nama Lore
 const peran = ["Seer", "Sorcerer", "Villager", "Bodyguard", "Prince", "Werewolf","Lone Wolf","Tough Guy","Mayor","Hunter","Cursed","Ghost","Minion","Tanner","Lycan","Drunk","Fruit Brute","Diseased"];
+
+//Penambahan lore
+const loreInput = document.getElementById("inputLore");
+const buttonLore = document.getElementById("buttonLore");
+buttonLore.addEventListener("click", () => {
+  const nilaiLore = loreInput.value;
+  peran.push(nilaiLore);
+
+  // Panggil fungsi createCheckbox untuk membuat checkbox baru
+  const newCheckbox0 = createCheckbox0(nilaiLore);
+  containerP.appendChild(newCheckbox0);
+
+});
 
 const containerP = document.querySelector('.lore');
 

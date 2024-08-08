@@ -267,3 +267,29 @@ a {
 a:hover {
     background: lightgreen;
 }
+
+.inputText {
+    background: lightgreen;
+    display: flex;
+    width: 270px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.inputText > input {
+    background: white;
+    border: none;
+}
+
+.inputText > span {
+    aspect-ratio: "1:1";
+    background: #7555eb;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.inputText > span:hover {
+    background: white;
+}

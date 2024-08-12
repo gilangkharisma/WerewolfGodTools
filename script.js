@@ -8,6 +8,7 @@ function generateInput() {
     const yangDilik0 = Array.from(checkboxes0).map(checkbox => checkbox.value);
     const jumPeran = yangDilik0.length;
     
+    document.getElementById("play").style.display = "none";
 
     // Menghapus div yang ada di outputDiv
     outputDiv.innerHTML = '';
@@ -76,6 +77,7 @@ function generateInput() {
     document.getElementById('upPemain').addEventListener('click', () => {
       updatePemain(pemainBertahan);
     })
+
     
 }
 
@@ -105,6 +107,7 @@ function updatePemain(pemainBertahan){
 
     document.getElementById('mulai').addEventListener('click', () => {
         startTimer(nPemain);
+
     });
 }
 
@@ -131,6 +134,10 @@ function startTimer(nPemain) {
       }
     }, 1000);
 }
+
+document.getElementById('stopTimer').addEventListener('click', () => {
+  clearInterval(intervalid);
+});
 
 //audio pagi malam
 const audioPagi = document.getElementById("audioPagi");

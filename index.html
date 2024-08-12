@@ -32,7 +32,7 @@
     
     <div class="inputan">
     </div>
-    <div class="gameButton">
+    <div class="gameButton" id="play">
         <span class="material-symbols-outlined" onclick="generateInput()" style="font-size: 40px;">
             stadia_controller
             </span> 
@@ -62,8 +62,11 @@
     <h2>Timer</h2>
     <button id="mulai"><span class="material-symbols-outlined">
         timer
-        </span> Mulai Timer</button>
+        </span> Mulai Timer 
+    </button>
+    <span id="stopTimer">Pause</span>
     <div id="timer"></div>
+
     <audio id="myAudio">
         <source src="https://ia601702.us.archive.org/20/items/windows-xp-7-10-sound-effects-opus-48/Windows%2010%20-%20Alarm%2010.opus" type="audio/mpeg">
         Your browser does not support the audio element.

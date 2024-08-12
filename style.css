@@ -293,3 +293,16 @@ a:hover {
 .inputText > span:hover {
     background: white;
 }
+
+#stopTimer {
+    display: block;
+    padding: 7px;
+    background: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#stopTimer:hover {
+    background: lightblue;
+}
+

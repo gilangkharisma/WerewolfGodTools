@@ -7,8 +7,6 @@ function generateInput() {
     const yangDilik1 = Array.from(checkboxes1).map(checkbox => checkbox.value);
     const yangDilik0 = Array.from(checkboxes0).map(checkbox => checkbox.value);
     const jumPeran = yangDilik0.length;
-    
-    document.getElementById("play").style.display = "none";
 
     // Menghapus div yang ada di outputDiv
     outputDiv.innerHTML = '';
@@ -178,7 +176,7 @@ buttonNama.addEventListener("click", () => {
   // Panggil fungsi createCheckbox untuk membuat checkbox baru
   const newCheckbox = createCheckbox(nilaiNama);
   container.appendChild(newCheckbox);
-
+  namaInput.value = "";
   console.log(nilaiNama);
 });
 
@@ -225,7 +223,7 @@ buttonLore.addEventListener("click", () => {
   // Panggil fungsi createCheckbox untuk membuat checkbox baru
   const newCheckbox0 = createCheckbox0(nilaiLore);
   containerP.appendChild(newCheckbox0);
-
+  loreInput.value = "";
 });
 
 const containerP = document.querySelector('.lore');
@@ -255,3 +253,22 @@ peran.forEach(peran => {
   containerP.appendChild(checkboxDiv);
 });
 
+// display none untuk
+function toggleDisplay() {
+  const hiddenElement = document.getElementById('confirm');
+  hiddenElement.style.display = hiddenElement.style.display === 'block' ? 'none' : 'block';
+}
+
+function confirm() {
+  toggleDisplay();
+  generateInput();
+}
+
+
+//text area
+const textarea = document.getElementById('myTextarea');
+
+textarea.addEventListener('focus', () => {
+    textarea.selectionStart = 0;
+    textarea.selectionEnd = 0;
+});

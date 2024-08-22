@@ -22,6 +22,12 @@
     <div class="lore">
     </div>
 
+    <!-- konfirmasi -->
+    <div id="confirm">
+        <div id="yes" onclick="confirm()">Yes</div>
+        <div id="no" onclick="toggleDisplay()">No</div>
+    </div>
+
     <h2>Kehidupan Pemain</h2>
     <div class="inputText">
         <input type="text" name="inputNama" id="inputNama" >
@@ -33,7 +39,7 @@
     <div class="inputan">
     </div>
     <div class="gameButton" id="play">
-        <span class="material-symbols-outlined" onclick="generateInput()" style="font-size: 40px;">
+        <span class="material-symbols-outlined" onclick="toggleDisplay()" style="font-size: 40px;">
             stadia_controller
             </span> 
     </div>
@@ -102,7 +108,7 @@
     <!-- <h2>Rekapitulasi Kemenangan</h2> -->
     <h2>Catatan</h2>
     <a href="https://codepen.io/arismakey/full/QWXGJYW" target="_blank">Buku Panduan</a>
-    <textarea name="mauskkan catatanmu disini" id="" cols="30" rows="10" placeholder="masukkan catatanmu disini">
+    <textarea name="mauskkan catatanmu disini" id="myTextarea" cols="30" rows="10" placeholder="masukkan catatanmu disini">
 
     </textarea>
     <script src="script.js"></script>
